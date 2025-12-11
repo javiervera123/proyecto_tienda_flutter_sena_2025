@@ -78,11 +78,17 @@ app.post("/login", async (req, res) => {
     });
   }
 });
+// inicia servidor en railway
+const PORT = process.env.PORT || 3000; // Usa el puerto que da Railway
+
+app.listen(PORT, () => {
+  console.log("Servidor corriendo en el puerto " + PORT);
+});
 
 
-// ---------------------------
-// INICIAR SERVIDOR
-// ---------------------------
+/*INICIAR SERVIDOR en local
+
 app.listen(3000, () => {
   console.log("Servidor corriendo en el puerto 3000");
 });
+*/
