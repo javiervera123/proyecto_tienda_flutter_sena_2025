@@ -2,7 +2,10 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class CompraService {
-  final String baseUrl = "http://10.0.2.2:3000";
+  // Nota: Si estás en Android Studio o VSCode, 10.0.2.2 es correcto para localhost.
+  // si es en celular la ip config del equipo.
+  // en este caso el backend está en railway, un servidor en la nube
+  final String baseUrl = "https://proyectotiendafluttersena2025-production.up.railway.app";
 
   /// Llama al endpoint de Node.js para procesar la transacción completa.
   /// Acepta el ID del cliente y la lista de productos del carrito.

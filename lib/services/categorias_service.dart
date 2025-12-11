@@ -4,7 +4,10 @@ import 'package:http/http.dart' as http;
 import '../models/categoria_model.dart';
 
 class CategoriasService {
-  static const String baseUrl = "http://10.0.2.2:3000";
+  // Nota: Si estás en Android Studio o VSCode, 10.0.2.2 es correcto para localhost.
+  // si es en celular la ip config del equipo.
+  // en este caso el backend está en railway, un servidor en la nube
+  static const String baseUrl = "https://proyectotiendafluttersena2025-production.up.railway.app";
 
   static Future<List<Categoria>> getCategorias() async {
     try {

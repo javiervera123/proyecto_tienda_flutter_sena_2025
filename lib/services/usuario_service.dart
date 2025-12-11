@@ -2,7 +2,10 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class UsuarioService {
-  final String baseUrl = "http://10.0.2.2:3000"; // Para Android Emulator
+  // Nota: Si estás en Android Studio o VSCode, 10.0.2.2 es correcto para localhost.
+  // si es en celular la ip config del equipo.
+  // en este caso el backend está en railway, un servidor en la nube
+  final String baseUrl = "https://proyectotiendafluttersena2025-production.up.railway.app"; // Para Android Emulator
 
   Future<Map<String, dynamic>> login(String usuario, String password) async {
     try {

@@ -5,7 +5,9 @@ import '../models/producto.dart';
 
 class ProductoService {
   // Nota: Si estás en Android Studio o VSCode, 10.0.2.2 es correcto para localhost.
-  final String baseUrl = "http://10.0.2.2:3000";
+  // si es en celular la ip config del equipo.
+  // en este caso el backend está en railway, un servidor en la nube
+  final String baseUrl = "https://proyectotiendafluttersena2025-production.up.railway.app";
 
   /// ==========================================================
   /// OBTENER PRODUCTOS (CORREGIDO)
