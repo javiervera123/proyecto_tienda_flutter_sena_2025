@@ -1,7 +1,7 @@
 // controllers/productos_controller.js
 
 // Importa el modelo de producto. Asegúrate que el nombre de archivo es 'Producto_model'
-const Producto = require('../models/producto');
+const Producto = require('../models/producto_model');
 
 /**
  * Función para obtener y listar todos los productos
