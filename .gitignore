@@ -43,3 +43,11 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Ignorar frontend Flutter
+build/
+.dart_tool/
+packages/
+
+# Ignorar node_modules del backend
+backend/node_modules/
